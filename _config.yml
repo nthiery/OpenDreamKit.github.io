@@ -13,7 +13,7 @@ blog_path:           "/news/"
 future:              True
 plugins:
   - jekyll-paginate
-  - jekyll-github-metadata
+    #  - jekyll-github-metadata
   - jekyll-redirect-from
 
 exclude: ['public/*.md', 'public/*.html', '_tagpages/README.md', '*.synctex.gz', '*.aux', '*.nav', '*.out', '*.snm', '*.tex', '*.log', '*.toc']
