@@ -98,7 +98,7 @@ The installer include three desktop and/or start menu shortcuts:
 "SageMath Console" launches the standard Sage command prompt in a text-based
 console. In general it integrates well enough with the Windows shell to
 launch files with the default viewer for those file types. For example,
-plots will saved to files and displayed automatically with the default image
+plots will be saved to files and displayed automatically with the default image
 viewer registered on the computer.
 
 ![Sage for Windows console](/public/images/2017-08-28-SageWindows/console.png){:class="img-responsive"}
@@ -108,12 +108,12 @@ graphics, it may also be possible to embed plots and equations directly in
 the console, but this has not been made to work yet with Sage.
 
 "SageMath Shell" runs a bash shell with the environment set up to
-run software in the Sage distribution.  More advanced users, or users who
+run software in the Sage distribution. This targets more advanced users, or users who
 wish to directly use other software included in the Sage distribution (e.g.
 GAP, Singular) without going through the Sage interface.  Finally,
 "SageMath Notebook" starts a Jupyter Notebook server with Sage configured as
 the default kernel and, where possible, opens the Notebook interface in the
-user's browser.
+user's browser. TODO: this last sentence could possibly be phrased in a less technical way for the casual reader.
 
 In princple this could also be used as a development environment for doing
 development of Sage and/or Sage extensions on Windows, but the current
@@ -136,7 +136,7 @@ to the Docker container.
 This approach "worked", but was still fairly clumsy and error-prone.  In
 order to make the experience as transparent as possible a fair amount of
 automation of Docker was needed.  This could get particularly tricky in
-cases where the user also uses Docker directly, and accidentally interferes
+cases where the user also used Docker directly, and accidentally interfered
 with the Sage Docker installation.  Handling issues like file system and
 network port mapping, while possible, was even more complicated.  What's
 worse, running Linux images in Docker for Windows still requires
